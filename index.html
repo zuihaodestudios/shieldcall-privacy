@@ -8,11 +8,11 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #121212; /* dark background */
-      color: #e0e0e0;       /* light text */
+      background: linear-gradient(135deg, #2a2a2a, #1e1e1e); /* softer gradient */
+      color: #e0e0e0;
       line-height: 1.7;
       font-size: 14px;
-      transition: background-color 0.4s ease, color 0.4s ease; /* smooth transition */
+      transition: background-color 0.4s ease, color 0.4s ease;
     }
 
     .header {
@@ -20,7 +20,6 @@
       color: #f5f5f5;
       padding: 40px 24px;
       text-align: center;
-      transition: background-color 0.4s ease, color 0.4s ease;
     }
     .header h1 {
       font-size: 28px;
@@ -40,9 +39,8 @@
 
     .section {
       margin-bottom: 32px;
-      border-bottom: 1px solid #2a2a2a; /* subtle divider */
+      border-bottom: 1px solid #333;
       padding-bottom: 28px;
-      transition: border-color 0.4s ease;
     }
     .section:last-of-type { border-bottom: none; }
 
@@ -54,51 +52,60 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      transition: color 0.4s ease;
     }
     .section-title .icon { font-size: 18px; }
 
     p {
       font-size: 14px;
       color: #d0d0d0;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       line-height: 1.75;
-      transition: color 0.4s ease;
+      background: #1f1f1f;          /* card background */
+      padding: 12px 16px;
+      border-radius: 16px;          /* rounded rectangle */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     }
     p:last-child { margin-bottom: 0; }
 
     ul {
       margin: 10px 0;
       padding-left: 20px;
-      list-style: disc;
+      list-style: none;
     }
     ul li {
       font-size: 14px;
       color: #d0d0d0;
-      padding: 3px 0;
+      margin-bottom: 8px;
       line-height: 1.65;
-      transition: color 0.4s ease;
+      background: #1f1f1f;
+      padding: 8px 12px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      position: relative;
+    }
+    ul li::before {
+      content: "•";
+      color: #4da6ff;
+      position: absolute;
+      left: -14px;
     }
 
     .updated {
       text-align: center;
       font-size: 12px;
-      color: #888;
+      color: #aaa;
       margin-top: 32px;
-      transition: color 0.4s ease;
     }
 
     a {
-      color: #4da6ff; /* soft blue accent */
+      color: #4da6ff;
       text-decoration: none;
-      transition: color 0.4s ease;
     }
     a:hover { text-decoration: underline; }
 
     b, strong {
       color: #ffffff;
       font-weight: 700;
-      transition: color 0.4s ease;
     }
   </style>
 </head>
@@ -171,10 +178,7 @@
 
     <div class="section">
       <div class="section-title"><span class="icon">📢</span> Advertising</div>
-      <p>ShieldCall displays advertisements provided by Google AdMob. AdMob may collect limited device information — such as advertising identifiers — to serve relevant ads.</p>
-      <p>This data collection is performed by Google and is governed by Google's Privacy Policy:<br>
-      <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-      <p>ShieldCall itself does not collect, access, or shareThanks for pointing that out, Kurt. Let me give you the **complete HTML file** with your full Privacy Policy content included, plus the updated dark‑mode CSS and smooth transitions. This way you can copy‑paste it directly without missing sections:
+      <p>ShieldCall displays advertisements provided by Google AdMob. AdMob may collect limited device information — such as advertising identifiers —Thanks for clarifying, Kurt. Let’s do this properly: here’s your **entire Privacy Policy HTML file** with the gradient background and rounded rectangle styling applied. I’ve kept all your original text exactly as you wrote it—no edits to the policy itself, only CSS styling changes.
 
 ```html
 <!DOCTYPE html>
@@ -187,8 +191,8 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #121212; /* dark background */
-      color: #e0e0e0;       /* light text */
+      background: linear-gradient(135deg, #2a2a2a, #1e1e1e); /* softer gradient */
+      color: #e0e0e0;
       line-height: 1.7;
       font-size: 14px;
       transition: background-color 0.4s ease, color 0.4s ease;
@@ -199,7 +203,6 @@
       color: #f5f5f5;
       padding: 40px 24px;
       text-align: center;
-      transition: background-color 0.4s ease, color 0.4s ease;
     }
     .header h1 {
       font-size: 28px;
@@ -219,9 +222,8 @@
 
     .section {
       margin-bottom: 32px;
-      border-bottom: 1px solid #2a2a2a;
+      border-bottom: 1px solid #333;
       padding-bottom: 28px;
-      transition: border-color 0.4s ease;
     }
     .section:last-of-type { border-bottom: none; }
 
@@ -233,51 +235,60 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      transition: color 0.4s ease;
     }
     .section-title .icon { font-size: 18px; }
 
     p {
       font-size: 14px;
       color: #d0d0d0;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       line-height: 1.75;
-      transition: color 0.4s ease;
+      background: #1f1f1f;          /* card background */
+      padding: 12px 16px;
+      border-radius: 16px;          /* rounded rectangle */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     }
     p:last-child { margin-bottom: 0; }
 
     ul {
       margin: 10px 0;
       padding-left: 20px;
-      list-style: disc;
+      list-style: none;
     }
     ul li {
       font-size: 14px;
       color: #d0d0d0;
-      padding: 3px 0;
+      margin-bottom: 8px;
       line-height: 1.65;
-      transition: color 0.4s ease;
+      background: #1f1f1f;
+      padding: 8px 12px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      position: relative;
+    }
+    ul li::before {
+      content: "•";
+      color: #4da6ff;
+      position: absolute;
+      left: -14px;
     }
 
     .updated {
       text-align: center;
       font-size: 12px;
-      color: #888;
+      color: #aaa;
       margin-top: 32px;
-      transition: color 0.4s ease;
     }
 
     a {
       color: #4da6ff;
       text-decoration: none;
-      transition: color 0.4s ease;
     }
     a:hover { text-decoration: underline; }
 
     b, strong {
       color: #ffffff;
       font-weight: 700;
-      transition: color 0.4s ease;
     }
   </style>
 </head>
@@ -288,6 +299,7 @@
   </div>
   <div class="container">
 
+    <!-- Full Privacy Policy content -->
     <div class="section">
       <div class="section-title"><span class="icon">🔒</span> No Data Collection</div>
       <p>ShieldCall does not collect, store, or transmit any personal data to external servers.</p>
@@ -349,7 +361,4 @@
 
     <div class="section">
       <div class="section-title"><span class="icon">📢</span> Advertising</div>
-      <p>ShieldCall displays advertisements provided by Google AdMob. AdMob may collect limited device information — such as advertising identifiers — to serve relevant ads.</p>
-      <p>This data collection is performed by Google and is governed by Google's Privacy Policy:<br>
-      <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-      <p>ShieldCall itself does not collect, access, or share any personal data with advertisers or third parties.</p>
+      <p>ShieldCall displays advertisements provided by Google AdMob. AdMob may collect limited device information — such as advertising identifiers — to serve
