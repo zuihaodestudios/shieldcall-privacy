@@ -1,130 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShieldCall Privacy Policy</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 30px;
-      font-size: 1.4rem;
-      color: #38bdf8;
-    }
-
-    p, li {
-      color: #cbd5f5;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .card {
-      background: #1e293b;
-      border-radius: 16px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-
-    .badge {
-      display: inline-block;
-      background: #22c55e;
-      color: black;
-      padding: 5px 10px;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #94a3b8;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldCall — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: #222; line-height: 1.7; font-size: 14px; }
+        .header { background: #1a1a2e; color: white; padding: 40px 24px; text-align: center; }
+        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+        .header p { font-size: 14px; opacity: 0.7; }
+        .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 60px; }
+        .section { margin-bottom: 32px; border-bottom: 1px solid #e0e0e0; padding-bottom: 28px; }
+        .section:last-of-type { border-bottom: none; }
+        .section-title { font-size: 16px; font-weight: 700; color: #1a1a2e; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .section-title .icon { font-size: 18px; }
+        p { font-size: 14px; color: #333; margin-bottom: 10px; line-height: 1.75; }
+        p:last-child { margin-bottom: 0; }
+        ul { margin: 10px 0; padding-left: 20px; list-style: disc; }
+        ul li { font-size: 14px; color: #333; padding: 3px 0; line-height: 1.65; }
+        .updated { text-align: center; font-size: 12px; color: #aaa; margin-top: 32px; }
+        a { color: #1a5276; }
+        b, strong { color: #111; font-weight: 700; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>ShieldCall</h1>
-    <div class="badge">Privacy First</div>
-    <p>ShieldCall is designed to protect your privacy and give you full control over incoming calls.</p>
+<div class="header">
+    <h1>🛡️ ShieldCall</h1>
+    <p>Privacy Policy</p>
+</div>
+<div class="container">
 
-    <div class="card">
-      <h2>🔒 No Data Collection</h2>
-      <p>ShieldCall does not collect, store, or transmit any personal data to external servers.</p>
-      <p>All processing happens locally on your device.</p>
+    <div class="section">
+        <div class="section-title"><span class="icon">🔒</span> No Data Collection</div>
+        <p>ShieldCall does not collect, store, or transmit any personal data to external servers.</p>
+        <p>All processing is performed entirely on your device. Your phone numbers, contacts, and call information never leave your device <b>by ShieldCall</b>.</p>
+        <p>ShieldCall has no backend servers, no user accounts, and no cloud storage. <b>Your data belongs to you.</b></p>
     </div>
 
-    <div class="card">
-      <h2>📞 How It Works</h2>
-      <p>ShieldCall uses Android's Call Screening technology to analyze incoming calls and block unwanted calls before they reach you.</p>
-      <p>Call data is processed in real-time and never leaves your device.</p>
+    <div class="section">
+        <div class="section-title"><span class="icon">📞</span> How ShieldCall Works</div>
+        <p>ShieldCall uses Android's built-in Call Screening Service to <b>screen and analyze incoming calls</b> in real time before they reach you.</p>
+        <p>When a call comes in, ShieldCall checks it against your blocked numbers list, your trusted contacts, and spam detection signals — all on-device. If the call is identified as unwanted, it is silently rejected before your phone rings.</p>
+        <p><b>Call data is processed in real time and is not stored unless a call is blocked.</b></p>
+        <p>ShieldCall does not access, read, or interact with your device's native phone call history or system call log in any way.</p>
     </div>
 
-    <div class="card">
-      <h2>👤 Contacts Access</h2>
-      <p>Used only to identify trusted callers and avoid blocking people you know.</p>
-      <p>Contact data stays on your device.</p>
+    <div class="section">
+        <div class="section-title"><span class="icon">📋</span> What ShieldCall Stores Locally</div>
+        <p>ShieldCall stores the following data locally on your device only:</p>
+        <ul>
+            <li><b>Blocked numbers list</b> — numbers you have manually blocked, with optional labels</li>
+            <li><b>Trusted numbers list</b> — numbers you have explicitly marked as trusted</li>
+            <li><b>Blocked call records</b> — a log of calls ShieldCall has blocked, including the number and reason for blocking</li>
+            <li><b>App settings</b> — your preferences such as spam blocking, trusted contacts toggle, and notification preference</li>
+            <li><b>Block statistics</b> — lifetime, daily, and monthly blocked call counts</li>
+        </ul>
+        <p>Calls that are allowed through are never recorded or stored. Only blocked calls appear in the in-app log.</p>
+        <p>All of this data remains exclusively on your device and is never transmitted externally. You can clear the blocked call log at any time from within the app.</p>
     </div>
 
-    <div class="card">
-      <h2>⚙️ Permissions</h2>
-      <ul>
-        <li><strong>READ_CONTACTS</strong> – identify known callers</li>
-        <li><strong>POST_NOTIFICATIONS</strong> – show blocked call alerts</li>
-      </ul>
-      <p>ShieldCall does not read your system call history.</p>
+    <div class="section">
+        <div class="section-title"><span class="icon">👤</span> Contacts Access</div>
+        <p>ShieldCall requests access to your contacts solely to identify trusted callers and prevent accidental blocking of people you know.</p>
+        <p>This data is processed locally on your device and is never uploaded, shared, transmitted, or stored outside your device. <b>It is used for no other purpose.</b></p>
     </div>
 
-    <div class="card">
-      <h2>📂 Local Storage</h2>
-      <p>Only blocked calls are stored locally on your device.</p>
-      <p>Allowed calls are never recorded.</p>
+    <div class="section">
+        <div class="section-title"><span class="icon">⚙️</span> Permissions</div>
+        <p>ShieldCall requests only the permissions strictly necessary for its core functionality:</p>
+        <ul>
+            <li><b>Call Screening Role</b> — required by Android to screen and block incoming calls before they ring. Granted through Android's system role manager, not as a standard runtime permission.</li>
+            <li><b>READ_CONTACTS</b> — used locally to identify known contacts and avoid accidentally blocking trusted callers. Data is processed on-device only and never transmitted.</li>
+            <li><b>POST_NOTIFICATIONS</b> — used to notify you when a call has been blocked. You are asked to grant or deny this permission when you first open the app.</li>
+            <li><b>INTERNET</b> — required solely for Google AdMob to load and display advertisements.</li>
+        </ul>
+        <p>ShieldCall does not request or use READ_CALL_LOG, READ_PHONE_STATE, READ_PHONE_NUMBERS, ANSWER_PHONE_CALLS, or any other sensitive telephony permissions beyond the Call Screening role.</p>
     </div>
 
-    <div class="card">
-      <h2>📢 Advertising</h2>
-      <p>ShieldCall uses Google AdMob for ads.</p>
-      <p>
-        Learn more: 
-        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
-      </p>
+    <div class="section">
+        <div class="section-title"><span class="icon">🔔</span> Notifications</div>
+        <p>ShieldCall can notify you when a call has been blocked. <b>This permission is optional.</b></p>
+        <p>If you decline, no notifications will be sent. You can enable or disable notifications at any time in your device settings.</p>
     </div>
 
-    <div class="card">
-      <h2>✉️ Contact</h2>
-      <p>Email: zuihaodestudios@gmail.com</p>
+    <div class="section">
+        <div class="section-title"><span class="icon">🛡️</span> Security</div>
+        <p>All data stored by ShieldCall is kept locally on your device using Android's built-in app sandbox and security protections.</p>
+        <p>Because ShieldCall uses no external servers and requires no user account, <b>there is no remote access to your data.</b></p>
     </div>
 
-    <footer>
-      © 2026 ShieldCall. All rights reserved.
-    </footer>
-  </div>
+    <div class="section">
+        <div class="section-title"><span class="icon">📢</span> Advertising</div>
+        <p>ShieldCall displays advertisements provided by Google AdMob. AdMob may collect limited device information — such as advertising identifiers — to serve relevant ads.</p>
+        <p>This data collection is performed by Google and is governed by Google's Privacy Policy:<br>
+        <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+        <p>ShieldCall itself does not collect, access, or share any personal data with advertisers or third parties.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span class="icon">👶</span> Children's Privacy</div>
+        <p>ShieldCall is not directed toward children under the age of 13.</p>
+        <p>The app does not knowingly collect personal data from anyone, including children. Since no personal data is collected by the app itself, no data from children is stored or processed.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span class="icon">📝</span> Changes to This Policy</div>
+        <p>This Privacy Policy may be updated from time to time to reflect changes in the app or applicable regulations.</p>
+        <p>Any updates will be reflected on this page with a revised effective date. We encourage you to review this policy periodically.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span class="icon">✉️</span> Contact</div>
+        <p>If you have any questions or concerns about this Privacy Policy, you can contact us at:</p>
+        <p><a href="mailto:zuihaodestudios@gmail.com">zuihaodestudios@gmail.com</a></p>
+    </div>
+
+    <p class="updated">Last updated: April 2026</p>
+</div>
 </body>
 </html>
