@@ -1,123 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShieldCall — Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.7;
-        }
-        .header {
-            background: #1a1a2e;
-            color: white;
-            padding: 40px 24px;
-            text-align: center;
-        }
-        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
-        .header p { font-size: 14px; opacity: 0.7; }
-        .container { max-width: 720px; margin: 32px auto; padding: 0 16px 60px; }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin-bottom: 16px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        }
-        .card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-        .icon { font-size: 20px; }
-        .card-header h2 { font-size: 16px; font-weight: 600; color: #1a1a2e; }
-        .card p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px; }
-        .card p:last-child { margin-bottom: 0; }
-        .card ul { margin: 10px 0; padding-left: 4px; list-style: none; }
-        .card ul li { font-size: 14px; color: #555; padding: 3px 0; }
-        .card ul li::before { content: "• "; color: #4a6fa5; font-weight: bold; }
-        .updated { text-align: center; font-size: 12px; color: #999; margin-top: 24px; }
-        a { color: #4a6fa5; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShieldCall Privacy Policy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      color: #38bdf8;
+    }
+
+    p, li {
+      color: #cbd5f5;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #22c55e;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-<div class="header">
-    <h1>🛡️ ShieldCall</h1>
-    <p>Privacy Policy</p>
-</div>
-<div class="container">
+  <div class="container">
+    <h1>ShieldCall</h1>
+    <div class="badge">Privacy First</div>
+    <p>ShieldCall is designed to protect your privacy and give you full control over incoming calls.</p>
 
     <div class="card">
-        <div class="card-header"><span class="icon">🔒</span><h2>No Data Collection</h2></div>
-        <p>ShieldCall does not collect, store, or transmit any personal data to external servers.</p>
-        <p>All processing is performed locally on your device. Your phone numbers, contacts, and call information never leaves your device.</p>
+      <h2>🔒 No Data Collection</h2>
+      <p>ShieldCall does not collect, store, or transmit any personal data to external servers.</p>
+      <p>All processing happens locally on your device.</p>
     </div>
 
     <div class="card">
-        <div class="card-header"><span class="icon">📞</span><h2>How ShieldCall Works</h2></div>
-        <p>ShieldCall uses Android's Call Screening technology to analyze incoming calls and block unwanted calls before they reach you.</p>
-        <p>This process happens entirely on your device and does not involve any external servers.</p>
+      <h2>📞 How It Works</h2>
+      <p>ShieldCall uses Android's Call Screening technology to analyze incoming calls and block unwanted calls before they reach you.</p>
+      <p>Call data is processed in real-time and never leaves your device.</p>
     </div>
 
     <div class="card">
-        <div class="card-header"><span class="icon">👤</span><h2>Contacts Access</h2></div>
-        <p>ShieldCall requests access to your contacts only to identify trusted callers and prevent accidental blocking.</p>
-        <p>This information is used locally on your device and is never uploaded, shared, or stored externally.</p>
+      <h2>👤 Contacts Access</h2>
+      <p>Used only to identify trusted callers and avoid blocking people you know.</p>
+      <p>Contact data stays on your device.</p>
     </div>
 
     <div class="card">
-        <div class="card-header"><span class="icon">⚙️</span><h2>Permissions Usage</h2></div>
-        <p>ShieldCall requests only the permissions necessary to provide its core functionality:</p>
-        <ul>
-            <li><strong>READ_CONTACTS</strong> — used locally to identify known callers and avoid blocking contacts</li>
-            <li><strong>POST_NOTIFICATIONS</strong> — used to notify you when a call has been blocked</li>
-        </ul>
-        <p>ShieldCall does not access or read your system call history.</p>
+      <h2>⚙️ Permissions</h2>
+      <ul>
+        <li><strong>READ_CONTACTS</strong> – identify known callers</li>
+        <li><strong>POST_NOTIFICATIONS</strong> – show blocked call alerts</li>
+      </ul>
+      <p>ShieldCall does not read your system call history.</p>
     </div>
 
     <div class="card">
-        <div class="card-header"><span class="icon">📂</span><h2>Local Data Storage</h2></div>
-        <p>ShieldCall may store blocked call records and app settings locally on your device.</p>
-        <p>This data is never transmitted externally and can be cleared at any time within the app.</p>
+      <h2>📂 Local Storage</h2>
+      <p>Only blocked calls are stored locally on your device.</p>
+      <p>Allowed calls are never recorded.</p>
     </div>
 
     <div class="card">
-        <div class="card-header"><span class="icon">🛡️</span><h2>Security</h2></div>
-        <p>All data is stored locally using Android's built-in security protections.</p>
-        <p>Since ShieldCall does not use external servers or user accounts, your data is not accessible remotely.</p>
+      <h2>📢 Advertising</h2>
+      <p>ShieldCall uses Google AdMob for ads.</p>
+      <p>
+        Learn more: 
+        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+      </p>
     </div>
 
     <div class="card">
-        <div class="card-header"><span class="icon">📢</span><h2>Advertising</h2></div>
-        <p>ShieldCall uses Google AdMob to display ads. AdMob may collect limited device information to provide relevant ads.</p>
-        <p>This data is handled by Google and is subject to their privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-        <p>ShieldCall does not collect or share personal data with advertisers.</p>
+      <h2>✉️ Contact</h2>
+      <p>Email: zuihaodestudios@gmail.com</p>
     </div>
 
-    <div class="card">
-        <div class="card-header"><span class="icon">👶</span><h2>Children's Privacy</h2></div>
-        <p>ShieldCall is not directed toward children under the age of 13.</p>
-        <p>The app does not knowingly collect personal data from anyone, including children.</p>
-    </div>
-
-    <div class="card">
-        <div class="card-header"><span class="icon">📝</span><h2>Changes to This Policy</h2></div>
-        <p>This Privacy Policy may be updated from time to time.</p>
-        <p>Any updates will be reflected on this page with a revised effective date.</p>
-    </div>
-
-    <div class="card">
-        <div class="card-header"><span class="icon">✉️</span><h2>Contact</h2></div>
-        <p>If you have any questions about this Privacy Policy, you can contact us at:</p>
-        <p><a href="mailto:zuihaodestudios@gmail.com">zuihaodestudios@gmail.com</a></p>
-    </div>
-
-    <p class="updated">Last updated: April 2026</p>
-</div>
+    <footer>
+      © 2026 ShieldCall. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
