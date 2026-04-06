@@ -44,12 +44,6 @@
       background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
       pointer-events: none;
     }
-    .hero-icon {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-      display: inline-block;
-      filter: drop-shadow(0 0 20px rgba(59,130,246,0.4));
-    }
     .hero h1 {
       font-family: 'Space Mono', monospace;
       font-size: clamp(1.5rem, 4vw, 2rem);
@@ -152,13 +146,34 @@
     }
     @media (max-width: 600px) {
       .hero { padding: 2rem 1.25rem 1.5rem; }
-      .section { padding: 1.5rem; }
+      .hero h1 { font-size: 1.6rem; }
+      .hero .subtitle { font-size: 0.95rem; }
+      .section { padding: 1.25rem; }
+      .section-header h2 { font-size: 0.9rem; }
+      .section p, .section ul li { font-size: 0.88rem; }
+      .section-icon { width: 36px; height: 36px; font-size: 1.2rem; border-radius: 10px; }
+      .container { padding: 0 1rem 3rem; }
+    }
+
+    @media (max-width: 380px) {
+      .hero h1 { font-size: 1.4rem; }
+      .section { padding: 1rem; }
+      .section-header { gap: 0.5rem; }
+      .section-header h2 { font-size: 0.85rem; }
+      .section p, .section ul li { font-size: 0.84rem; }
+      .section-icon { width: 32px; height: 32px; font-size: 1rem; }
+      .container { padding: 0 0.75rem 2.5rem; }
+      .footer { padding: 1.5rem 1rem 2rem; font-size: 0.8rem; }
+    }
+
+    @media (min-width: 601px) and (max-width: 900px) {
+      .container { padding: 0 2rem 4rem; }
+      .section { padding: 1.75rem; }
     }
   </style>
 </head>
 <body>
   <header class="hero">
-    <div class="hero-icon">🛡️</div>
     <h1>Shield<span>Call</span></h1>
     <p class="subtitle">Privacy Policy</p>
     <span class="updated">Last updated: April 2026</span>
@@ -246,7 +261,7 @@
         <div class="section-icon">✉️</div>
         <h2>Contact</h2>
       </div>
-      <p>If you have any questions regarding your privacy, please contact: <a href="mailto:zuihaodestudios@gmail.com" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3);">zuihaodestudios@gmail.com</a></p>
+      <p>If you have any questions regarding your privacy, please contact: <a href="mailto:zuihaodestudios&#64;gmail&#46;com" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3);">&#122;&#117;&#105;&#104;&#97;&#111;&#100;&#101;&#115;&#116;&#117;&#100;&#105;&#111;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
     </section>
   </main>
   <footer class="footer">
