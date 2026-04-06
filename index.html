@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
     :root {
       --bg: #1a1e2a;
       --surface: #222838;
@@ -21,7 +20,6 @@
       --green: #22c55e;
       --green-glow: rgba(34, 197, 94, 0.12);
     }
-
     body {
       font-family: 'DM Sans', sans-serif;
       background: var(--bg);
@@ -29,8 +27,6 @@
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-
-    /* Hero */
     .hero {
       position: relative;
       padding: 2.5rem 1.5rem 1.75rem;
@@ -78,15 +74,11 @@
       padding: 0.35rem 1rem;
       border-radius: 100px;
     }
-
-    /* Layout */
     .container {
       max-width: 760px;
       margin: 0 auto;
       padding: 0 1.5rem 4rem;
     }
-
-    /* Sections */
     .section {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -96,7 +88,6 @@
       transition: border-color 0.3s;
     }
     .section:hover { border-color: rgba(59,130,246,0.3); }
-
     .section-header {
       display: flex;
       align-items: center;
@@ -121,12 +112,10 @@
       font-weight: 700;
       letter-spacing: -0.01em;
     }
-
     .section p {
       color: var(--text-muted);
       font-size: 0.95rem;
     }
-
     .section ul {
       list-style: none;
       margin-top: 0.75rem;
@@ -152,8 +141,6 @@
       color: var(--text);
       font-weight: 600;
     }
-
-    /* Footer */
     .footer {
       text-align: center;
       padding: 2rem 1.5rem 3rem;
@@ -163,8 +150,6 @@
       max-width: 760px;
       margin: 0 auto;
     }
-
-    /* Responsive */
     @media (max-width: 600px) {
       .hero { padding: 2rem 1.25rem 1.5rem; }
       .section { padding: 1.5rem; }
@@ -172,16 +157,13 @@
   </style>
 </head>
 <body>
-
   <header class="hero">
     <div class="hero-icon">🛡️</div>
     <h1>Shield<span>Call</span></h1>
     <p class="subtitle">Privacy Policy</p>
     <span class="updated">Last updated: April 2026</span>
   </header>
-
   <main class="container">
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">🔒</div>
@@ -189,7 +171,6 @@
       </div>
       <p>ShieldCall is built on a "Zero-Data" architecture. We do not collect, store, or transmit any personal data to external servers. All processing is performed strictly on your device. Your phone numbers, contacts, and call information never leave your device. ShieldCall has no backend servers, no user accounts, and no cloud storage. Your data belongs entirely to you.</p>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">📞</div>
@@ -202,20 +183,18 @@
         <li><strong>Privacy-First:</strong> Calls that are allowed through are never recorded, logged, or monitored. ShieldCall does not interact with your system's native call history.</li>
       </ul>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">📋</div>
         <h2>Data Stored Locally (Room Database)</h2>
       </div>
-      <p>To provide core functionality, ShieldCall stores the following in an encrypted local database on your device:</p>
+      <p>To provide core functionality, ShieldCall stores the following in a secure local database protected by Android's app sandbox on your device:</p>
       <ul>
         <li><strong>Blocked &amp; Trusted Lists:</strong> Numbers you manually manage, including custom labels.</li>
         <li><strong>Blocked Call Records:</strong> A log of blocked attempts (Number, Name, and Reason) so you can review activity.</li>
         <li><strong>User Control:</strong> You can clear all logs at any time. You may also export your blocked list as a local file for backup; this file remains under your control and is never shared with us.</li>
       </ul>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">👤</div>
@@ -227,7 +206,6 @@
         <li><strong>No Uploads:</strong> Your contact list is never uploaded, synced, or shared. It is used only to cross-reference the incoming caller ID against your address book locally.</li>
       </ul>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">⚙️</div>
@@ -241,23 +219,21 @@
       </ul>
       <p style="margin-top: 0.75rem;">Users can manage or revoke these permissions at any time through the 'Manage Notifications' or 'Call Screening' options within the app's Settings menu, which provide direct links to the Android System Settings.</p>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">📢</div>
         <h2>Advertising &amp; Third-Party Data</h2>
       </div>
-      <p>ShieldCall displays ads provided by Google AdMob. To serve relevant ads, the AdMob SDK may collect limited device information, such as Advertising IDs. This data collection is performed by Google and is governed by the Google Privacy Policy. ShieldCall does not share your contacts, call logs, or blocked numbers with Google or third-party advertisers.</p>
+      <p>ShieldCall displays ads provided by Google AdMob. To serve relevant ads, the AdMob SDK may collect limited device information, such as Advertising IDs. This data collection is performed by Google and is governed by the <a href="https://policies.google.com/privacy" target="_blank" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3);">Google Privacy Policy</a>. ShieldCall does not share your contacts, call logs, or blocked numbers with Google or third-party advertisers.</p>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">🛡️</div>
-        <h2>Security &amp; Data Retention</h2>
+        <h2>Security &amp; Data Privacy</h2>
       </div>
-      <p>Your data is protected by the Android app sandbox. Because there are no remote servers, there is no risk of a centralized data breach. When you uninstall ShieldCall, the local database containing your logs and blocked numbers is automatically and permanently deleted by the Android OS.</p>
+      <p>Your data is protected by the Android App Sandbox, ensuring that ShieldCall's information is isolated from other apps. Because we do not use remote servers, there is no risk of a centralized data breach.</p>
+      <p style="margin-top: 0.75rem;"><strong style="color: var(--text);">Data Deletion:</strong> ShieldCall stores your blocklists and encrypted call log of blocked calls locally. In accordance with Android's storage standards, this local database is cleared by the system when the app is uninstalled. Users can also manually clear all data at any time through the app settings.</p>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">👶</div>
@@ -265,20 +241,16 @@
       </div>
       <p>ShieldCall is not directed toward children under 13. We do not knowingly collect personal data from any users, including children.</p>
     </section>
-
     <section class="section">
       <div class="section-header">
         <div class="section-icon">✉️</div>
         <h2>Contact</h2>
       </div>
-      <p>If you have any questions regarding your privacy, please contact: <a href="mailto:zuihaodestudios@gmail.com" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3);">zuihaodestudios@gmail.com</a></p>
+      <p>If you have any questions regarding your privacy, please contact: &#122;&#117;&#105;&#104;&#97;&#111;&#100;&#101;&#115;&#116;&#117;&#100;&#105;&#111;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</p>
     </section>
-
   </main>
-
   <footer class="footer">
     <p>&copy; 2026 Zuihaode Studios. All rights reserved.</p>
   </footer>
-
 </body>
-</html></
+</html>
