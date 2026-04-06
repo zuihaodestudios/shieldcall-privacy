@@ -1,180 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShieldCall — Privacy Policy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- NO noindex tag — required for Google Play crawler to verify this URL -->
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShieldCall – Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: #f9f9f9;
-            color: #2d3436;
-            line-height: 1.6;
-            font-size: 16px;
-        }
+    :root {
+      --bg: #0c0f14;
+      --surface: #141820;
+      --surface-raised: #1a1f2a;
+      --border: #252b3a;
+      --text: #e2e6ef;
+      --text-muted: #8a92a6;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --green: #22c55e;
+      --green-glow: rgba(34, 197, 94, 0.12);
+    }
 
-        /* ── Header ── */
-        .header {
-            background: #1a1a2e;
-            color: white;
-            padding: 52px 24px 40px;
-            text-align: center;
-        }
-        .header h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 6px; }
-        .header .subtitle { font-size: 16px; font-weight: 400; opacity: 0.7; margin-bottom: 10px; }
-        .header .updated { font-size: 13px; opacity: 0.45; font-style: italic; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-                /* ── Main container ── */
-        .policy-container {
-            max-width: 720px;
-            margin: 40px auto;
-            padding: 0 20px 60px;
-        }
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 5rem 1.5rem 3.5rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      filter: drop-shadow(0 0 20px rgba(59,130,246,0.4));
+    }
+    .hero h1 {
+      font-family: 'Space Mono', monospace;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero .subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .hero .updated {
+      display: inline-block;
+      margin-top: 1.25rem;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+    }
 
-        /* ── Cards ── */
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 28px 32px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
+    /* Layout */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
 
-        .card h2 {
-            font-size: 18px;
-            font-weight: 700;
-            color: #0984e3;
-            margin-bottom: 14px;
-            margin-top: 0;
-        }
+    /* Sections */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 2rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.3s;
+    }
+    .section:hover { border-color: rgba(59,130,246,0.3); }
 
-        .card p {
-            font-size: 16px;
-            color: #2d3436;
-            line-height: 1.6;
-            margin-bottom: 12px;
-            text-align: left;
-        }
-        .card p:last-child { margin-bottom: 0; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .section-icon {
+      font-size: 1.5rem;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface-raised);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+    .section-header h2 {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
 
-        .card ul {
-            margin: 10px 0 4px 0;
-            padding-left: 0;
-            list-style: none;
-        }
-        .card ul li {
-            font-size: 16px;
-            color: #2d3436;
-            padding: 8px 0 8px 20px;
-            position: relative;
-            line-height: 1.6;
-            border-bottom: 1px solid #f1f2f6;
-        }
-        .card ul li:last-child { border-bottom: none; }
-        .card ul li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #0984e3;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 1.4;
-        }
+    .section p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
 
-        a { color: #0984e3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+    .section ul {
+      list-style: none;
+      margin-top: 0.75rem;
+    }
+    .section ul li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.6rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .section ul li strong {
+      color: var(--text);
+      font-weight: 600;
+    }
 
-        /* ── Footer ── */
-        .footer {
-            text-align: center;
-            padding: 24px 20px 40px;
-            font-size: 13px;
-            color: #b2bec3;
-        }
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 2rem 1.5rem 3rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      max-width: 760px;
+      margin: 0 auto;
+    }
 
-        /* ── Mobile ── */
-        @media (max-width: 600px) {
-            .header h1 { font-size: 26px; }
-            .card { padding: 20px; }
-            .card p, .card ul li { font-size: 15px; }
-        }
-    </style>
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero { padding: 3.5rem 1.25rem 2.5rem; }
+      .section { padding: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>ShieldCall</h1>
+  <header class="hero">
+    <div class="hero-icon">🛡️</div>
+    <h1>Shield<span>Call</span></h1>
     <p class="subtitle">Privacy Policy</p>
-    <p class="updated">Last updated: April 2026</p>
-</div>
+    <span class="updated">Last updated: April 2026</span>
+  </header>
 
-<div class="policy-container">
+  <main class="container">
 
-    <div class="card" id="commitment">
-        <h2>🔒 Our Privacy Commitment (Zero-Data Architecture)</h2>
-        <p>ShieldCall is built on a "Zero-Data" architecture. We do not collect, store, or transmit any personal data to external servers. All processing is performed strictly on your device. Your phone numbers, contacts, and call information never leave your device. ShieldCall has no backend servers, no user accounts, and no cloud storage. Your data belongs entirely to you.</p>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">🔒</div>
+        <h2>Our Privacy Commitment (Zero-Data Architecture)</h2>
+      </div>
+      <p>ShieldCall is built on a "Zero-Data" architecture. We do not collect, store, or transmit any personal data to external servers. All processing is performed strictly on your device. Your phone numbers, contacts, and call information never leave your device. ShieldCall has no backend servers, no user accounts, and no cloud storage. Your data belongs entirely to you.</p>
+    </section>
 
-    <div class="card" id="how-it-works">
-        <h2>📞 How ShieldCall Works (On-Device Processing)</h2>
-        <p>ShieldCall utilizes the Android <strong>Call Screening Service</strong> to analyze incoming calls in real-time before your phone rings.</p>
-        <ul>
-            <li><strong>Local Filtering:</strong> Incoming numbers are checked against your local Blocked List and Trusted Contacts.</li>
-            <li><strong>Spam Signal Analysis:</strong> We utilize your carrier's network-level signals (STIR/SHAKEN) and local number pattern analysis to identify potential fraud.</li>
-            <li><strong>Privacy-First:</strong> Calls that are allowed through are never recorded, logged, or monitored. ShieldCall does not interact with your system's native call history.</li>
-        </ul>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📞</div>
+        <h2>How ShieldCall Works (On-Device Processing)</h2>
+      </div>
+      <p>ShieldCall utilizes the Android Call Screening Service to analyze incoming calls in real-time before your phone rings.</p>
+      <ul>
+        <li><strong>Local Filtering:</strong> Incoming numbers are checked against your local Blocked List and Trusted Contacts.</li>
+        <li><strong>Spam Signal Analysis:</strong> We utilize your carrier's network-level signals (STIR/SHAKEN) and local number pattern analysis to identify potential fraud.</li>
+        <li><strong>Privacy-First:</strong> Calls that are allowed through are never recorded, logged, or monitored. ShieldCall does not interact with your system's native call history.</li>
+      </ul>
+    </section>
 
-    <div class="card" id="data-stored">
-        <h2>📋 Data Stored Locally (Room Database)</h2>
-        <p>To provide core functionality, ShieldCall stores the following in an encrypted local database on your device:</p>
-        <ul>
-            <li><strong>Blocked &amp; Trusted Lists:</strong> Numbers you manually manage, including custom labels.</li>
-            <li><strong>Blocked Call Records:</strong> A log of blocked attempts (Number, Name, and Reason) so you can review activity.</li>
-            <li><strong>User Control:</strong> You can clear all logs at any time. You may also export your blocked list as a local file for backup; this file remains under your control and is never shared with us.</li>
-        </ul>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>Data Stored Locally (Room Database)</h2>
+      </div>
+      <p>To provide core functionality, ShieldCall stores the following in an encrypted local database on your device:</p>
+      <ul>
+        <li><strong>Blocked &amp; Trusted Lists:</strong> Numbers you manually manage, including custom labels.</li>
+        <li><strong>Blocked Call Records:</strong> A log of blocked attempts (Number, Name, and Reason) so you can review activity.</li>
+        <li><strong>User Control:</strong> You can clear all logs at any time. You may also export your blocked list as a local file for backup; this file remains under your control and is never shared with us.</li>
+      </ul>
+    </section>
 
-    <div class="card" id="contacts">
-        <h2>👤 Contacts Access</h2>
-        <p>ShieldCall requests the READ_CONTACTS permission solely to identify known callers and prevent them from being accidentally blocked.</p>
-        <ul>
-            <li><strong>Real-Time Only:</strong> The check happens in-memory during an incoming call.</li>
-            <li><strong>No Uploads:</strong> Your contact list is <strong>never</strong> uploaded, synced, or shared. It is used only to cross-reference the incoming caller ID against your address book locally.</li>
-        </ul>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2>Contacts Access</h2>
+      </div>
+      <p>ShieldCall requests the READ_CONTACTS permission solely to identify known callers and prevent them from being accidentally blocked.</p>
+      <ul>
+        <li><strong>Real-Time Only:</strong> The check happens in-memory during an incoming call.</li>
+        <li><strong>No Uploads:</strong> Your contact list is never uploaded, synced, or shared. It is used only to cross-reference the incoming caller ID against your address book locally.</li>
+      </ul>
+    </section>
 
-    <div class="card" id="permissions">
-        <h2>⚙️ Permissions Disclosure</h2>
-        <p>We follow the principle of least privilege, requesting only what is essential:</p>
-        <ul>
-            <li><strong>Call Screening Role:</strong> The core requirement for blocking calls on modern Android versions (API 29+).</li>
-            <li><strong>POST_NOTIFICATIONS:</strong> Optional permission (Android 13+) used to alert you of a blocked call.</li>
-            <li><strong>INTERNET:</strong> Used strictly by the Google AdMob SDK to load advertisements.</li>
-        </ul>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚙️</div>
+        <h2>Permissions Disclosure</h2>
+      </div>
+      <p>We follow the principle of least privilege, requesting only what is essential:</p>
+      <ul>
+        <li><strong>Call Screening Role:</strong> The core requirement for blocking calls on modern Android versions (API 29+).</li>
+        <li><strong>POST_NOTIFICATIONS:</strong> Optional permission (Android 13+) used to alert you of a blocked call.</li>
+        <li><strong>INTERNET:</strong> Used strictly by the Google AdMob SDK to load advertisements.</li>
+      </ul>
+      <p style="margin-top: 0.75rem;">Users can manage or revoke these permissions at any time through the 'Manage Notifications' or 'Call Screening' options within the app's Settings menu, which provide direct links to the Android System Settings.</p>
+    </section>
 
-    <div class="card" id="advertising">
-        <h2>📢 Advertising &amp; Third-Party Data</h2>
-        <p>ShieldCall displays ads provided by <strong>Google AdMob</strong>. To serve relevant ads, the AdMob SDK may collect limited device information, such as <strong>Advertising IDs</strong>. This data collection is performed by Google and is governed by the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>. ShieldCall does not share your contacts, call logs, or blocked numbers with Google or third-party advertisers.</p>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📢</div>
+        <h2>Advertising &amp; Third-Party Data</h2>
+      </div>
+      <p>ShieldCall displays ads provided by Google AdMob. To serve relevant ads, the AdMob SDK may collect limited device information, such as Advertising IDs. This data collection is performed by Google and is governed by the Google Privacy Policy. ShieldCall does not share your contacts, call logs, or blocked numbers with Google or third-party advertisers.</p>
+    </section>
 
-    <div class="card" id="security">
-        <h2>🛡️ Security &amp; Data Retention</h2>
-        <p>Your data is protected by the Android app sandbox. Because there are no remote servers, there is no risk of a centralized data breach. When you uninstall ShieldCall, the local database containing your logs and blocked numbers is automatically and permanently deleted by the Android OS.</p>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">🛡️</div>
+        <h2>Security &amp; Data Retention</h2>
+      </div>
+      <p>Your data is protected by the Android app sandbox. Because there are no remote servers, there is no risk of a centralized data breach. When you uninstall ShieldCall, the local database containing your logs and blocked numbers is automatically and permanently deleted by the Android OS.</p>
+    </section>
 
-    <div class="card" id="children">
-        <h2>👶 Children's Privacy</h2>
-        <p>ShieldCall is not directed toward children under 13. We do not knowingly collect personal data from any users, including children.</p>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">👶</div>
+        <h2>Children's Privacy</h2>
+      </div>
+      <p>ShieldCall is not directed toward children under 13. We do not knowingly collect personal data from any users, including children.</p>
+    </section>
 
-    <div class="card" id="contact">
-        <h2>✉️ Contact</h2>
-        <p>If you have any questions regarding your privacy, please contact: &#122;&#117;&#105;&#104;&#97;&#111;&#100;&#101;&#115;&#116;&#117;&#100;&#105;&#111;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</p>
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">✉️</div>
+        <h2>Contact</h2>
+      </div>
+      <p>If you have any questions regarding your privacy, please contact: <a href="mailto:zuihaodestudios@gmail.com" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3);">zuihaodestudios@gmail.com</a></p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Zuihaode Studios. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
