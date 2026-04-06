@@ -10,12 +10,12 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0c0f14;
-      --surface: #141820;
-      --surface-raised: #1a1f2a;
-      --border: #252b3a;
-      --text: #e2e6ef;
-      --text-muted: #8a92a6;
+      --bg: #1a1e2a;
+      --surface: #222838;
+      --surface-raised: #2a3145;
+      --border: #353d52;
+      --text: #eaecf2;
+      --text-muted: #a3abbe;
       --accent: #3b82f6;
       --accent-glow: rgba(59, 130, 246, 0.15);
       --green: #22c55e;
@@ -33,43 +33,43 @@
     /* Hero */
     .hero {
       position: relative;
-      padding: 5rem 1.5rem 3.5rem;
+      padding: 2.5rem 1.5rem 1.75rem;
       text-align: center;
       overflow: hidden;
     }
     .hero::before {
       content: '';
       position: absolute;
-      top: -40%;
+      top: -50%;
       left: 50%;
       transform: translateX(-50%);
-      width: 600px;
-      height: 600px;
+      width: 500px;
+      height: 500px;
       background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
       display: inline-block;
       filter: drop-shadow(0 0 20px rgba(59,130,246,0.4));
     }
     .hero h1 {
       font-family: 'Space Mono', monospace;
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(1.5rem, 4vw, 2rem);
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.15rem;
     }
     .hero h1 span { color: var(--accent); }
     .hero .subtitle {
-      font-size: 1.25rem;
+      font-size: 1.05rem;
       color: var(--text-muted);
       font-weight: 500;
     }
     .hero .updated {
       display: inline-block;
-      margin-top: 1.25rem;
+      margin-top: 0.75rem;
       font-family: 'Space Mono', monospace;
       font-size: 0.8rem;
       color: var(--text-muted);
@@ -166,7 +166,7 @@
 
     /* Responsive */
     @media (max-width: 600px) {
-      .hero { padding: 3.5rem 1.25rem 2.5rem; }
+      .hero { padding: 2rem 1.25rem 1.5rem; }
       .section { padding: 1.5rem; }
     }
   </style>
@@ -271,14 +271,4 @@
         <div class="section-icon">✉️</div>
         <h2>Contact</h2>
       </div>
-      <p>If you have any questions regarding your privacy, please contact: <a href="mailto:zuihaodestudios@gmail.com" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3);">zuihaodestudios@gmail.com</a></p>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2026 Zuihaode Studios. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+      <p>If you have any questions regarding your privacy, please contact: <a href="/cdn-cgi/l/email-protection#403a352928212f242533343524292f3300272d21292c6e232f2d" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3);"><span class="__cf_email__" data-cfemail="a8d2ddc1c0c9c7cccddbdcddccc1c7dbe8cfc5c9c1c486cbc7c5">[email&#160;protected]</span></a></
